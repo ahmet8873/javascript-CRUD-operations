@@ -13,5 +13,25 @@
 </a>
 
  # Project Description
+The Task Management CRUD Operations App is a simple web application that allows users to manage their tasks efficiently. The app provides essential CRUD functionalities (Create, Read, Update, Delete) to add, view, edit, and remove tasks. It is built using a modern technology stack, including Node.js, Express, and MongoDB, to create a seamless user experience.
 
+# Features
+
+Create Task: Users can add new tasks by entering a task description and clicking the "Add Task" button. The app will store the task in the database, and it will be immediately visible in the task list.
+
+View Tasks: The app displays a list of all tasks in a user-friendly interface. Each task is shown with its description and has options to update or delete it.
+
+Update Task: Users can edit the description of any existing task by clicking the "Update" button next to the task. A prompt will appear to enter the updated text, and upon confirmation, the task will be updated in the database and reflected in the task list.
+
+Delete Task: The app allows users to remove a task from the list by clicking the "Delete" button next to the task. The task will be deleted from the database, and the task list will automatically update to reflect the change.
+
+Delete All Tasks: For ease of use, the app offers an option to delete all tasks at once. Users can click the "Delete All Tasks" button, and after a confirmation prompt, all tasks in the database will be cleared.
+
+# Technology Stack
+
+Backend: The app is powered by a Node.js server using the Express framework. It handles the API requests and responses for CRUD operations and interacts with the MongoDB database for data storage.
+
+Database: MongoDB is used as the NoSQL database to store the tasks. Each task consists of a description field, and it is stored as a document in the database.
+
+Frontend: The frontend is built using HTML, CSS, and JavaScript. It provides a user-friendly interface for users to interact with the tasks, view the task list, and manage their tasks effortlessly.
 
