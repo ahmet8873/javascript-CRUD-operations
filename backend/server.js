@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
 const taskRoute = require("./routes/taskRoute");
+const path = require("path");
 
 const app = express();
 
@@ -20,6 +21,8 @@ const dbConnect = async () => {
   }
 };
 dbConnect();
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api", taskRoute);
 
